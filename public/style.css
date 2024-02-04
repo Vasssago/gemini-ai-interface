@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 60%;
+    height: 100%;
+    max-height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(13,16,28, 0.6);
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    color: white;
+}
+
+#APIKEY {
+    margin-bottom: 30px;
+    padding: 10px;
+    max-width: 100%;
+    background-color: rgba(31, 37, 59, 0.8);
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+
+    max-height: 20px;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.container a {
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+#prompt {
+    max-height: 100px;
+    min-height: 100px;
+
+    color: white;
+}
+
+.container textarea, #response  {
+    height: 200px;
+
+    margin-bottom: 30px;
+    padding: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: rgba(31, 37, 59, 0.8);
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+}
+
+#response {
+    height: calc(min-height + 20px);
+}
+
+.container span {
+    margin-bottom: 10px;
+}
+
+.submit_btn {
+    width: 150px;
+    height: 60px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(31, 37, 59, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border-style: none;    
+
+    font-size: 1em;
+
+    transition: ease 0.25s;
+}
+
+.submit_btn:hover {
+    color: white;
+    background-color: rgba(31, 37, 59, 0.8);
+}
+
+.submit_btn:enabled  {
+    outline: 3  px solid rgb(52, 1, 255);
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: none;
+}

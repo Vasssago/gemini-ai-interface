@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKDOWN TESTS</title>
+    <!-- <script type="module" src="script.js">  </script> -->
+</head>
+
+<body>
+
+    <div>
+        <p>
+            **Header** <br>
+            >quot
+        </p>
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
+        <zero-md id="Markdown">
+            <script type="text/markdown">
+            </script>
+        </zero-md>
+    </div>
+
+    <script>
+        const zeroMdHandler = document.getElementById("Markdown");
+
+        const contentsHandler = zeroMdHandler.querySelector("script");
+
+        contentsHandler.innerHTML = `
+            **${45}**
+        `
+    </script>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            padding: 50px;
+            width: 80%;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            height: 90vh;
+            background-color: #0e0e0e;
+            color: #fff;
+            font-size: 30px;
+        }
+    </style>
+</body>
+
+</html>

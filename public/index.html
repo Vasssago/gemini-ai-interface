@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI</title>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+
+    <!-- <script type="module" src="generateResponseScript.js"></script> -->
+    <script type="module" src="responseScript.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>GEMINI</h1>
+    </div>
+
+
+    <div class="container">
+        <span>Введите API ключ (обязательно)</span>
+        <input required minlength="38" name="APIKEY" id="APIKEY" />
+        <div id="API_KEY_validation_error" class="error">
+            <Label>Введенный вами ключ API не правильный!</Label>
+        </div>
+        <a href="https://makersuite.google.com/app/apikey?hl=ru" target="_blank" style="font-size: 0.9rem;;">Получить
+            API ключ</a>
+
+
+        <span>Введите ваш запрос</span>
+        <textarea disabled name="prompt" id="prompt" cols="30" rows="1" a></textarea>
+        <input disabled type="button" value="Подтвердить" class="submit_btn" id="submit">
+
+        <span>Ответ</span>
+        
+        <div id="response"></div>
+        <!-- <textarea  name="response" id="response" cols="30" rows="10" readonly></textarea> -->
+    </div>
+</body>
+
+</html>

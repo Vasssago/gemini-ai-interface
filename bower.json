@@ -1,0 +1,26 @@
+{
+  "name": "gemini_ai",
+  "description": "Interface for generative model Gemini AI from Google",
+  "main": "app.js",
+  "authors": [
+    "Vasssago <nurkanattrajsov@outlook.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AI",
+    "Interface"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "^2.1.0",
+    "@google/generative-ai": "^0.1.3",
+    "genai": "^0.0.18"
+  }
+}
