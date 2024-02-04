@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { Converter } from "showdown";
+import Showdown from "showdown";
 
 document.addEventListener('DOMContentLoaded', () => {
     const apiKeyHandler = document.getElementById("APIKEY");
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorLabel = document.getElementById("API_KEY_validation_error");
     const submitButton = document.getElementById("submit");
 
-    const converter = new Converter();
+    const converter = new Showdown.Converter();
 
     apiKeyHandler.addEventListener('input', (event) => {
         const API_KEY = event.target.value;
